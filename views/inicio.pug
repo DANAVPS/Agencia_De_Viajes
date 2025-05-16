@@ -1,0 +1,56 @@
+extends ./layout/index
+
+// Define el bloque "slider" (reemplaza el block slider del layout)
+block slider 
+  .slider 
+    h1 Rio de Janeiro 
+    em aventura
+    // Este slider podría tener fondo CSS, texto animado, etc.
+
+
+// Bloque principal de contenido (reemplaza block contenido del layout)
+block contenido 
+
+  // Sección principal, con margen superior (mt-5)
+  main.container.mt-5
+
+    // Título de sección
+    h2.text-center.mb-5 Sobre Nosotros
+
+    // Fila con dos columnas: texto e imagen
+    .row.mb-5
+
+      // Columna izquierda con texto
+      .col-md-6
+        p Vestibulum porta nec nibh eu aliquet...
+        p Nullam vitae ullamcorper turpis...
+
+      // Columna derecha con imagen
+      .col-md-6
+        img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        // La clase img-fluid hace que la imagen sea responsiva (Bootstrap)
+
+  // Nueva sección: se incluye un bloque externo de tarjetas de viajes
+  .container
+    include ./layout/viajes
+    // Esto carga dinámicamente el contenido del archivo viajes.pug
+
+  // Sección de promoción o descuento especial
+  .descuento
+    .container
+      .row
+        .col-md-6
+          .contenido
+            h3 5% de Descuento
+            p.titulo Viaje a Canada
+            p.fecha 20 de Marzo 2021 - 28 De Marzo 2021
+            p.precio $2,500 USD
+    // Este bloque puede estilizarse con fondo, bordes, etc. vía CSS
+
+  // Sección final con testimoniales de clientes
+  .container
+    h2.mt-5.text-center Opiniones
+
+    .row 
+      include ./layout/testimoniales
+      // Esto incluye el archivo testimoniales.pug, que muestra opiniones

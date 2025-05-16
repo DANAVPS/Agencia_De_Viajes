@@ -1,0 +1,33 @@
+/* Sección principal */
+.main.container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Tarjetas de viajes destacados */
+.viaje-destacado {
+    margin-bottom: 2rem;
+}
+
+.viaje-destacado img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Testimoniales en inicio */
+.testimonial-inicio {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-inicio blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-inicio footer {
+    color: var(--primary);
+    font-weight: bold;
+}

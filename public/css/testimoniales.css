@@ -1,0 +1,45 @@
+/* Listado de testimonios */
+.testimonial-list {
+    margin-top: 3rem;
+}
+
+.testimonial-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-item blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.testimonial-item footer {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Formulario de testimoniales */
+.testimonial-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+.testimonial-form label {
+    font-weight: 500;
+    color: #555;
+}
+
+.testimonial-form .form-control {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-form .btn {
+    margin-top: 1rem;
+}

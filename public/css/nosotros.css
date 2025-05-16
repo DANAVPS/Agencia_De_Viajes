@@ -1,0 +1,39 @@
+/* Imagen principal */
+.nosotros-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Texto de contenido */
+.nosotros-content {
+    padding: 0 2rem;
+}
+
+.nosotros-content blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Iconos de características */
+.icono-caracteristica {
+    text-align: center;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.icono-caracteristica:hover {
+    transform: translateY(-5px);
+}
+
+.icono-caracteristica img {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.icono-caracteristica h3 {
+    color: var(--primary);
+}
