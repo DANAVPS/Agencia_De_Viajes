@@ -4,10 +4,10 @@ import Testimoniales from '../models/Testimoniales.js';
 const PaginaInicio = async (req, res) => {
     const promises = [];
 
-    promises.push(Viaje,findAll({
+    promises.push(Viaje.findAll({
         limit: 3,
     }));
-    promises.push(Testimonial,findAll({
+    promises.push(Testimoniales.findAll({
         limit: 3,
     }));
     try {

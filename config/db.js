@@ -1,19 +1,23 @@
-import { Sequelize } from "sequelize";
+import Sequelize from 'sequelize';
 
-const db = new Sequelize ('Agenciadeviajes', 'root', '', {
-    host: 'localhost',
-    port: 3306,
-    dialect: 'mysql',
-    define: {
-        timestamps: false // Desactiva los timestamps automáticos de Sequelize
-    },
-    pool: {
-        max: 5, // Número máximo de conexiones en el pool
-        min: 0, // Número mínimo de conexiones en el pool
-        acquire: 30000, // Tiempo máximo para adquirir una conexión (en milisegundos)
-        idle: 10000 // Tiempo máximo que una conexión puede estar inactiva antes de ser liberada (en milisegundos)
-    },
-    operatorsAliases: false, // Desactiva los alias de operadores para evitar advertencias
-});
+const db = new Sequelize(
+    process.env.DB_NAME || 'agenciadeviajes',
+    process.env.DB_USER || 'root',
+    process.env.DB_PASSWORD || '',
+    {
+        host: process.env.DB_HOST || 'localhost',
+        port: process.env.DB_PORT || '3306',
+        dialect: 'mysql',
+        define: {
+            timestamps: false
+        },
+        pool: {
+            max: 5,
+            min: 0,
+            acquire: 30000,
+            idle: 10000
+        }
+    }
+);
 
-export default db; // Exporta la instancia de Sequelize para su uso en otras partes de la aplicación
+export default db;

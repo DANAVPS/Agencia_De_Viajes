@@ -21,11 +21,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// Rutas
-app.get('/', (req, res) => {
-    res.send('Bienvenido a la página principal');
-});
-
 app.use('/', router);
 
 // Conexión a base de datos
