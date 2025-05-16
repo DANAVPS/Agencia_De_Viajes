@@ -1,4 +1,6 @@
 // Al principio del archivo, después de importar los modelos
+import express from 'express';
+// resto de tus importaciones
 import db from './config/db.js'; // Ajusta la ruta según tu estructura
 import Viaje from './models/Viaje.js'; // Importa todos tus modelos
 import Testimonial from './models/Testimoniales.js';
