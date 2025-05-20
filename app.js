@@ -1,14 +1,8 @@
-// Al principio del archivo, después de importar los modelos
-import express from 'express';
-// resto de tus importaciones
-import db from './config/db.js'; // Ajusta la ruta según tu estructura
+import express from 'express'; 
+import router from './routes/index.js';
+import db from './config/db.js';
 import Viaje from './models/Viaje.js'; // Importa todos tus modelos
 import Testimonial from './models/Testimoniales.js';
-
-// Sincroniza la base de datos antes de iniciar el servidor
-db.sync()
-    .then(() => console.log('Tablas creadas correctamente'))
-    .catch(error => console.log(error));
 
 const app = express();
 const PORT = process.env.PORT || 4000;

@@ -23,7 +23,7 @@ const Viaje = db.define('viajes', {
     disponibles: {
         type: Sequelize.INTEGER
     },
-    slugs: {
+    slug: {
         type: Sequelize.STRING
     }
 }, {
