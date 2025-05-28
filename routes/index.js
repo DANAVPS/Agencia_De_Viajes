@@ -18,7 +18,7 @@ router.get('/nosotros', PaginaNosotros); //Ruta para la pagina nosotros
 
 router.get('/viajes', PaginaViajes); // Ruta para la página de viajes
 
-router.get('/viajes/.slug', PaginaDetalleViaje); // Ruta para la página de Detalle del viaje
+router.get('/viajes/:slug', PaginaDetalleViaje); // Ruta para la página de Detalle del viaje
 
 router.get('/testimoniales', PaginaTestimoniales); // Ruta para la página de Testimoniales
 

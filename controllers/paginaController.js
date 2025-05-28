@@ -64,7 +64,7 @@ const PaginaDetalleViaje = async (req, res) => {
         const viaje = await Viaje.findOne({ where: { slug } }); // Busca un viaje por su slug
 
         res.render('viaje', {
-            page: 'Información Viaje',
+            page: 'Viaje',
             viaje,
         });
     } catch (error) {
